@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>theRainbowNation</title>
+    <style>
+      html {
+        border-radius: 10px;
+        background: linear-gradient(#9e959c, #f378da);
+      }
+
+      h1 {
+        border: solid 1px #641053;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 40px;
+        margin: 30px 80px 15px 80px;
+      }
+      h2 {
+        text-align: center;
+        line-height: 40px;
+        margin-top: 10px;
+      }
+      img {
+        display: block;
+        max-width: 50%;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+      p {
+        display: block;
+        line-height: 20px;
+        margin: 16px 20px 16px 20px;
+        text-align: center;
+      }
+      span {
+        text-align: center;
+      }
+      button {
+        border: 1px solid #641053;
+        border-radius: 10px;
+        background-color: #f56fd8;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        color: #641053;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-weight: 100;
+        padding: 20px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background-color: #641053;
+        color: #eecde7;
+        cursor: pointer;
+        opacity: 0.9;
+      }
+      a {
+        text-decoration: none;
+        color: #641053;
+      }
+      .wholeBody {
+        text-align: center;
+        margin: 0 20px 0 20px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wholeBody">
+      <h1>SOUTH AFRICA</h1>
+      <h2>A rainbow nation. <br />🌈</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/284/original/Shecodes_pic.jpg?1685804129"
+        alt="South African flag"
+      />
+      <hr />
+      <p>
+        "<strong>Rainbow nation</strong>" is a term coined by Archbishop
+        <a href="https://en.wikipedia.org/wiki/Desmond_Tutu" target="_blank"
+          >Desmond Tutu
+        </a>
+        to describe post-apartheid South Africa after South Africa's first fully
+        democratic election in 1994. The phrase was elaborated upon by President
+        <a href="https://en.wikipedia.org/wiki/Nelson_Mandela" target="_blank">
+          Nelson Mandela</a
+        >
+        in his first month of office, when he proclaimed: "Each of us is as
+        intimately attached to the soil of this beautiful country as are the
+        famous jacaranda trees of Pretoria and the mimosa trees of the bushveld
+        – a rainbow nation at peace with itself and the world."
+        <br />
+        More about
+        <a href="https://en.wikipedia.org/wiki/Rainbow_nation" target="_blank"
+          ><em><strong>South Africa.</strong></em>
+        </a>
+      </p>
+      <div><button>Visit South Africa</button></div>
+      <span>
+        This page was coded by
+        <a href="https://www.instagram.com/gabie_felicia/" target="_blank">
+          <em><strong>Gabisile Sibanyoni.</strong></em></a
+        ></span
+      >
+    </div>
+    <script>
+      function visitSouthAfrica() {
+        let name = prompt("What is your first name?");
+        let passport = prompt("Do you have a passport?");
+        let h1 = document.querySelector("h1");
+        h1.innerHTML;
+        if (passport === "yes") {
+          h1.innerHTML = "We hope to see you soon, " + name + "!";
+        } else {
+          h1.innerHTML = "Go get your passport, " + name + "!";
+        }
+      }
+      let visitSouthAfricaButton = document.querySelector("button");
+      visitSouthAfricaButton.addEventListener("click", visitSouthAfrica);
+    </script>
+  </body>
+</html>
